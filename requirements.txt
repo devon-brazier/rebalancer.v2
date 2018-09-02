@@ -13,3 +13,4 @@ pandas
 numpy
 telethon
 datetime
+matplotlib
