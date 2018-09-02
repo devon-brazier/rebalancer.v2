@@ -1,0 +1,25 @@
+tester_type: livetest # livetest, backtest
+livetest_test: True # if True, order requests to Binance are test orders
+exchange: binance # binance
+
+# e.g. time_elapsed = tick_duration * rebalance_ticks
+tick_duration: 1 #seconds
+
+# open_order_check_ticks < rebalance_ticks
+rebalance_ticks: 3600
+open_order_check_ticks: 60
+
+transaction_fee: 0.001 # frac
+open_order_time_limit: 600000 # milliseconds
+minimum_btc_order: 0.001 # BTC
+candle_time: 1h #1m, 3m, 5m, 15m, 30m, 1h, 2h, 4h, 6h, 8h, 12h, 1d, 3d, 1w, 1M
+
+#Telegram
+telegram_on: True
+username: yanille
+telegram_ticks: 10
+api_id: 329784
+api_hash: b2bfec9d2f54566cb85469f2c090f813
+
+#day 86400 seconds
+#4hour 14400 seconds
