@@ -17,6 +17,7 @@ if None in [api_id, api_hash]:
 config_uri = "./rebalancer/config.yaml"
 conf = yaml.load(open(config_uri, "r"))
 
+
 if conf['telegram_on']:
     client = TelegramClient('rebalancer', api_id, api_hash).start()
 else:
