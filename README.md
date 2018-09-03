@@ -51,3 +51,13 @@ variables. Keep these very secure and **do not share them with anyone**.
 Important settings are, *tester_type*, *livetest_test*, *telegram_on* and *username*. If you
 want to run a live run on an exchange set *livetest_test* to **False**, this will tell Binance
 that order requests *are not* test orders.
+
+**Portfolio.csv** has a simple structure. Define the coin pairs you wish to add to the bot,
+**remember only add BTC pairs and to be safe only add highly liquid coins (100BTC+/24hr)**.
+If you want to use all specified assets from exchange then leave the *protcted balance* column
+as zero. If you do want to protect some 'on-exchange' assets from the bot, the column is absolute 
+amount not percentage amount of the asset. The *column* is the desired percentage of the
+portfolio you want the coins to take up.
+
+**NOTE**: All coins are traded against BTC so make sure BTC is in your portfolio, the bot will
+not actually trade BTCUSDT, it is only used to value the coins in USD.
