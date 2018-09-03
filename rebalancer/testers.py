@@ -350,7 +350,8 @@ class LiveTester(Tester):
 
     def start(self):
         self.s.enter(self.rebalance_duration, 1, self.sched_builder_rebalance, (self.s,))
-        self.s.enter(self.telegram_time_per_message, 2, self.sched_builder_telegram, (self.s,))
+        if self.config['telegram_on']:
+            self.s.enter(self.telegram_time_per_message, 2, self.sched_builder_telegram, (self.s,))
         self.s.enter(self.open_order_check_duration, 3, self.sched_builder_open, (self.s,))
         self.s.run()
 
