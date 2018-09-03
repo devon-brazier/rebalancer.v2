@@ -1,0 +1,23 @@
+tester_type: # livetest, backtest
+livetest_test: # set to False if you want to do a real rebalance
+exchange: # binance
+
+tick_duration: # seconds
+
+# Livetest
+# Rebalance ticks > Open_order ticks
+rebalance_ticks: # Time before next rebalance
+open_order_check_ticks: # Time before next open order check
+open_order_time_limit: # Max time an open order can exist
+
+# Backtest
+candle_time: # 1m, 3m, 5m, 15m, 30m, 1h, 2h, 4h, 6h, 8h, 12h, 1d, 3d, 1w, 1M
+
+# Binance info
+minimum_btc_order:
+transaction_fee:
+
+# Telegram
+telegram_on: # set telegram bot on/off
+username:
+telegram_ticks: # seconds
