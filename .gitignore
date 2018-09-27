@@ -2,3 +2,5 @@
 venv/
 rebalancer/__pycache__/
 rebalancer/config.yaml
+rebalancer.session
+rebalancer/etherscan_api.py
